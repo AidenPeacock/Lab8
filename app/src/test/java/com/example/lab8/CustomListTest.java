@@ -50,9 +50,9 @@ public class CustomListTest {
         list = MockCityList();
         City newCity = new City("Estevan", "SK");
         list.addCity(newCity);
-        list.remove(newCity);
+        list.deleteCity(newCity);
         assertEquals(list.getCount(), 0);
-        list.remove(newCity);
+        list.deleteCity(newCity);
         assertEquals(list.getCount(), 0);
     }
 
